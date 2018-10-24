@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Authors</title>
+	    <script src="../js/Authors.js"></script>
+    </head>
+
+    <body onload="fetchAuthors()" class="display columns alignment">
+
+        <!--Header-->
+        <div class="nav display alignment">
+            <div class="nav-header">
+                <div class="nav-title">
+                    LibraryManagementSystem
+                </div>
+            </div>
+            <button onclick="location.href='add-book.html'"> Add New Book </button>
+            <div class="nav-links">
+                <a href="../index.html">Books</a>
+                <a href="authors.html">Authors</a>
+                <a href="publishers.html" >Publishers</a>
+                <a></a>
+            </div>
+        </div>
+
+        <!--Stats-->
+        <div class="stats2 border width">
+            <div>
+                <h1 id="authorsTotal"class="pink"> </h1>
+            </div>
+        </div>
+
+        <!-- Data Will be appended here from Authors.js -->
+        <div id="data-authors" class="bottom">
+        </div>
+
+    </body>
+</html>

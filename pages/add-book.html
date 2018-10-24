@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Add New Book</title>
+	    <script src="../js/Books.js"></script>
+    </head>
+
+    <body class="display columns alignment">
+
+        <!--Header-->
+        <div class="nav display alignment">
+            <div class="nav-header">
+                <div class="nav-title">
+                    LibraryManagementSystem
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Books</a>
+                <a href="authors.html">Authors</a>
+                <a href="publishers.html" >Publishers</a>
+                <a></a>
+            </div>
+        </div>
+
+        <div class="form width border" >
+            <div>
+                <h1 class="pink"> Add new Book</h1>
+                <p class="line"></p>
+                
+                <!-- Form -->
+                <form  action="javascript:addData()" class="display columns">
+                    <label for="BookName">Book Name</label>
+                    <input type="text" id="BookName" name="BookName" placeholder="Book Name.." required>
+
+                    <label for="Author">Author</label>
+                    <input type="text" id="Author" name="Author" placeholder="Author.." required>
+
+                    <label for="Publisher">Publisher</label>
+                    <input type="text" id="Publisher" name="Publisher" placeholder="Publisher.." required>
+
+                    <label for="Date">Date</label>
+                    <input type="date" id="Date" name="Date" placeholder="Date..." required>   
+                
+                    <button type="submit">Add</button>
+                </form>    
+
+            </div>
+        </div>
+    </body>
+</html>
